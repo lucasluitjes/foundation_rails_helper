@@ -123,6 +123,9 @@ module FoundationRailsHelper
     end
 
     def custom_label(attribute, text, options)
+      return block_given? ? yield.html_safe : ''.html_safe if text == false
+      text = yield.html_safe + " #{text}" if block_given?
+      options ||= {}
       label(attribute, text, options)
     end
 
