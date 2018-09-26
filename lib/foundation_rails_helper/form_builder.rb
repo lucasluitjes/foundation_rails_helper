@@ -223,7 +223,7 @@ module FoundationRailsHelper
     end
 
     def field(attribute, options, html_options = nil)
-      auto_labels = true unless @options[:auto_labels] == false
+      auto_labels = false
       html = if auto_labels || options[:label]
                custom_label(attribute, options[:label], options[:label_options])
              else
