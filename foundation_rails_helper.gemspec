@@ -30,7 +30,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'actionpack',    rails
   gem.add_dependency 'activemodel',   rails
   gem.add_dependency 'activesupport', rails
-  gem.add_dependency 'tzinfo',        '~> 1.2', '>= 1.2.2'
+  gem.add_dependency 'tzinfo',        '~> 2.0'
 
   gem.add_development_dependency 'rspec-rails', '>= 3.1'
   gem.add_development_dependency 'mime-types',  '~> 2'
